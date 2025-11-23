@@ -17,18 +17,3 @@ fun extractValue(input: String, key: String): String?
 fun splitConfigIntoLines(configText: String): List<String>
 fun convertLinesToPairs(lines: List<String>): List<Pair<String, String>>
 fun findMatchingValue(pairs: List<Pair<String, String>>, searchKey: String): String?
-
----
-
-## 📌 Example Usage
-
-```kotlin
-val config = """
-  userId: user-123; role: admin;
-  authToken=token-xyz-789
-  environment : production; expiry: never
-"""
-
-println(extractValue(config, "role"))        // admin
-println(extractValue(config, "authToken"))   // token-xyz-789
-println(extractValue(config, "hostname"))    // null
