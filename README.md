@@ -20,8 +20,9 @@ fun findMatchingValue(pairs: List<Pair<String, String>>, searchKey: String): Str
 
 ---
 
-## 📌 Example Usage 
+## 📌 Example Usage
 
+```kotlin
 val config = """
   userId: user-123; role: admin;
   authToken=token-xyz-789
